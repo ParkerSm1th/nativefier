@@ -204,7 +204,7 @@ function createMenu({
       ],
     },
     {
-      label: 'Help',
+      label: 'Slashy',
       role: 'help',
       submenu: [
         {
@@ -218,20 +218,9 @@ function createMenu({
         },
         {
           label: 'Copyright Slashy Inc, all rights reserved'
-        },
+        }
       ],
     },
-    {
-      label: 'Slashy',
-      submenu: [
-        {
-          label: `Access main site`,
-          click: () => {
-            shell.openExternal('https://slashy.co.uk');
-          },
-        },
-      ],
-    }
   ];
 
   if (disableDevTools) {
