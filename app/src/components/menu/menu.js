@@ -208,19 +208,30 @@ function createMenu({
       role: 'help',
       submenu: [
         {
-          label: `Built with Nativefier v${nativefierVersion}`,
+          label: `Built by Parker Smith & Ben Jenkins`,
           click: () => {
-            shell.openExternal('https://github.com/jiahaog/nativefier');
+            shell.openExternal('https://slashy.co.uk');
           },
         },
         {
-          label: 'Report an Issue',
-          click: () => {
-            shell.openExternal('https://github.com/jiahaog/nativefier/issues');
-          },
+          type: 'separator',
+        },
+        {
+          label: 'Copyright Slashy Inc, all rights reserved'
         },
       ],
     },
+    {
+      label: 'Slashy',
+      submenu: [
+        {
+          label: `Access main site`,
+          click: () => {
+            shell.openExternal('https://slashy.co.uk');
+          },
+        },
+      ],
+    }
   ];
 
   if (disableDevTools) {
